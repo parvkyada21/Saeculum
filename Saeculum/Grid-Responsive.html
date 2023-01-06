@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Bootstrap Task</title>
+    <style>
+        body {
+            background-color: rgba(114, 163, 122, 0.61);
+        }
+        .img {    
+            height: 100px;
+            width: 110px;
+            border: 3px solid rgb(173, 190, 182);
+        }
+        .bottomright,.topright,.left-inside {
+            border: 3px solid rgba(207, 199, 199, 0.685);
+            border-radius: 9px;
+            background-color: beige;
+        }  
+    </style>
+</head>
+<body>
+<div class="container-fluid row justify-content-md-left m-3">
+    <div class="container-fluid row justify-content-md-left m-3">
+        <div class="col-3 left p-4">
+            <div class="left-inside p-2 shadow-lg">
+                <div><img alt="Coder" src="./pexels-rovenimagescom-949587.jpg" class="img mx-auto d-block rounded-circle"></div>
+                <div style="padding-top: 10px;text-align: center;"><h4>Parv</h4></div>
+                <div style="opacity:.6;text-align: center;">Front-end Developer</div>
+                <div style="opacity:.6;text-align: center;">India Colony , Ahmedabad , India</div>
+                <div style="padding-top: 20px;margin-bottom: 30px;text-align: center;">
+                    <button type="Follow" class="btn btn-primary">Follow</button>
+                    <button class="btn btn-outline-primary" for="btnradio1">Message</button>
+                </div>
+                <hr><br>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid row justify-content-md-left m-3">
+        <div class="col-3 left p-4">
+            <div class="left-inside p-2 shadow-lg">
+                <div style="border-bottom:2px solid lightgrey;padding-bottom: 10px;text-decoration: none;">
+                    <a href="#" target="_blank"><i style="font-size: x-large;float:left" class="fa fa-globe col-1" aria-hidden="true"></i></a>
+                    <div class="col">&nbsp;Website<small style="opacity: .6;float:right;">https://parvkeda.com</small></div>
+                </div>
+                <div style="border-bottom:2px solid lightgrey;padding-bottom:10px; padding-top:10px;">
+                    <a href="https://twitter.com/" target="_blank"><i style="font-size: x-large;float:left;color:lightseagreen" class="fa fa-twitter col-1" aria-hidden="true"></i></a>
+                    <div class="col">&nbsp;Twitter<small style="opacity: .6;float:right;">Parvkeda</small></div>
+                </div>
+                <div style="border-bottom:2px solid lightgrey;padding-bottom:10px; padding-top:10px;">
+                    <a href="https://www.instagram.com/" target="_blank"><i style="font-size: x-large;float:left;color:blueviolet;" class="fa fa-instagram col-1" aria-hidden="true"></i></a>
+                    <div class="col">&nbsp;Instagram<small style="opacity: .6;float:right;">Parv_keda_534</small></div>
+                </div>
+                <div style="border-bottom:2px solid lightgrey;padding-bottom:10px; padding-top:10px;">
+                    <a href="https://github.com/" target="_blank"><i style="font-size: x-large;float:left" class="fa fa-github col-1 text-dark" aria-hidden="true"></i></a>
+                    <div class="col">&nbsp;GitHub<small style="opacity: .6;float:right;">Parvkeda</small></div>
+                </div> 
+                <div style="padding-bottom: 10px; padding-top: 10px;">
+                    <a href="https://www.facebook.com/" target="_blank"><i style="font-size: x-large;float:left;color:lightseagreen;"class="fa fa-facebook col-1 primary" aria-hidden="true"></i></a>
+                    <div class="col">&nbsp;Facebook<small style="opacity: .6;float:right;">Parv Keda</small></div>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+    
+        
+        <div class="col-6  p-4 col">
+            <div class="col topright mb-5 p-3 shadow-lg">
+                <div class="row m-3">
+                    <div class="col-3">Full Name</div>
+                    <div class="col-9"><input class="form-control" type="text" placeholder="Parv Kyada"></div>
+                </div>
+                <div class="row m-3">
+                    <div class="col-3">Email</div>
+                    <div class="col-9"><input class="form-control" type="email" placeholder="parv@123.com"></div>
+                </div>
+                <div class="row m-3">
+                    <div class="col-3">Phone</div>
+                    <div class="col-9"><input class="form-control" type="tel" placeholder=" 9843546476"></div>
+                </div>
+                <div class="row m-3">
+                    <div class="col-3">Mobile</div>
+                    <div class="col-9"><input class="form-control" type="tel" placeholder="+1 423-764-34686"></div>
+                </div>
+                <div class="row m-3">
+                    <div class="col-3">Address</div>
+                    <div class="col-9"><input class="form-control" type="text" placeholder="India Colony, Ahmedabad, India">
+                    </div>
+                </div>
+                <div class="row m-3">
+                    <div class="col-3"></div>
+                    <div class="col-9"><button type="submit" class="btn btn-primary">Save Changes</button></div>
+                </div>
+            </div>
+
+            <div class="col bottomright p-5 shadow-lg">
+                <div><h4>Project Status</h4></div><br>
+                <div>Mobile Template</div>
+                <div class="progress" style="height: 10px;margin:10px 0;">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 86%" aria-valuenow="" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div>Website Markup</div>
+                <div class="progress" style="height: 10px;margin:10px 0;">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 72%" aria-valuenow="" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div>Web Design</div>
+                <div class="progress" style="height: 10px;margin:10px 0;">
+                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="" aria-valuemin="" aria-valuemax="100"></div>
+                </div>
+                <div>Backend API</div>
+                <div class="progress" style="height: 10px;margin:10px 0;">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 73%" aria-valuenow="" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div>One Page</div>
+                <div class="progress" style="height: 10px;margin:10px 0;">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 78%" aria-valuenow="" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+</div>  
+</body>
+</html>

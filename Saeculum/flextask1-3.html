@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Task-3</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        
+        height: 100%;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    #main {
+        display: flex;
+        flex: 1;
+    }
+
+    #main>article {
+        flex: 1;
+    }
+
+    #main>nav {
+        flex: 0 0 300px;
+        background: white;
+    }
+
+    #main>nav {
+        order: -1;
+    }
+
+    header {
+        height: 55px;
+    }
+
+    header,article,nav {
+        padding: 1px;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: black;
+        color: white;
+    }
+
+    .topnav a,span {
+        float: right;
+        color: white;
+        text-align: center;
+        padding: 14px 14px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .topnav header {
+        float: left;
+        padding: 14px 14px;
+        font-size: 20px;
+    }
+
+    .topnav a:hover {
+        background-color: #ddd;
+        color: rgb(27, 26, 26);
+    }
+
+    .main2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .rightside {
+        height: 634px;
+        flex: 4;
+    }
+
+    body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .circle {
+        height: 170px;
+        width: 170px;
+        border-radius: 50%;
+        background-color: #333;
+
+    }
+
+    .labelclass {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 90px;
+    }
+
+    td,th {
+        border-bottom: 1px solid rgb(184, 152, 152);
+        text-align: left;
+        padding: 6px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+
+    .bar-block .bar-item {
+            padding: 8px 18px;
+            height: auto;
+            display: block;
+            border: none;
+            white-space: normal;
+            float: none;
+            outline: 0;
+            padding-left: 30px;
+            color: rgb(0, 159, 239);
+            padding-top: 15px;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: rgb(64, 112, 131);
+            color: lightgrey;
+            opacity:100%;
+        }
+
+    * {
+        box-sizing: border-box
+    }
+
+    body {
+        font-family: "Lato", sans-serif;
+    }
+
+    .tab {
+        float: left;
+        background-color:rgba(146, 142, 142, 0.699);
+        width: 100%;
+        height: 100%;
+    }
+
+    .tab button {
+        display: block;
+        color: rgb(20, 20, 20);
+        padding: 22px 16px;
+        width: 100%;
+        border: none; 
+        outline: none;
+        text-align: left;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+
+    .tab button:hover {
+        background-color: rgb(140, 141, 153);
+    }
+</style>
+
+<body>
+    <div class="topnav">
+        <header>Project Name</header>
+        <a href="#home">Contect</a>
+        <a href="#news">Setting</a>
+        <a href="#contact">Profile</a>
+        <a href="#about">Home</a>
+        <span><input type="text" placeholder="Search.." style="border-radius:5px;height: 25px;border: none;"></span>
+    </div>
+    <div id="main">
+        <article>
+            <div class="main2">
+                <div class="rightside">
+                    <div style="margin:45px;margin-top:0px">
+                        <p style="font-size: xx-large;">Dashboard</p>
+                        <br>
+                        <div class="labelclass">
+                            <div class="circlecontainer">
+                                <div class="circle">
+                                </div>
+                                <div style="text-align: center;">
+                                    label
+                                </div>
+                                <div style="font-size: small;text-align: center;">
+                                    Something else..
+                                </div>
+                            </div>
+                            <div class="circlecontainer">
+                                <div class="circle">
+                                </div>
+                                <div style="text-align: center;">
+                                    label
+                                </div>
+                                <div style="font-size: small;text-align: center;">
+                                    Something else..
+                                </div>
+                            </div>
+                            <div class="circlecontainer">
+                                <div class="circle">
+                                </div>
+                                <div style="text-align: center;">
+                                    label
+                                </div>
+                                <div style="font-size: small;text-align: center;">
+                                    Something else..
+                                </div>
+                            </div>
+                            <div class="circlecontainer">
+                                <div class="circle">
+                                </div>
+                                <div style="text-align: center;">
+                                    label
+                                </div>
+                                <div style="font-size: small;text-align: center;">
+                                    Something else..
+                                </div>
+                            </div>
+                        </div>
+                        <section>
+                            <header style="font-size: 30px; padding-top:78px;">Section Title</header>
+                        </section>
+                        <div>
+                            <table>
+                                <tr>
+                                    <th>Company</th>
+                                    <th>Contact</th>
+                                    <th>Country</th>
+                                </tr>
+                                <tr>
+                                    <td>Alfreds Futterkiste</td>
+                                    <td>Maria Anders</td>
+                                    <td>Germany</td>
+                                </tr>
+                                <tr>
+                                    <td>Centro comercial Moctezuma</td>
+                                    <td>Francisco Chang</td>
+                                    <td>Mexico</td>
+                                </tr>
+                                <tr>
+                                    <td>Ernst Handel</td>
+                                    <td>Roland Mendel</td>
+                                    <td>Austria</td>
+                                </tr>
+                                <tr>
+                                    <td>Island Trading</td>
+                                    <td>Helen Bennett</td>
+                                    <td>UK</td>
+                                </tr>
+                                <tr>
+                                    <td>Laughing Bacchus Winecellars</td>
+                                    <td>Yoshi Tannamuri</td>
+                                    <td>Canada</td>
+                                </tr>
+                                <tr>
+                                    <td>Magazzini Alimentari Riuniti</td>
+                                    <td>Giovanni Rovelli</td>
+                                    <td>Italy</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <nav>
+            <div class="tab">
+                <div class=" bar-block" style="padding-top: 30px;">
+                    <a href="#" class="bar-item" style="background-color:rgb(0, 159, 239);color: lightgrey;">Overview</a>
+                    <a href="#" class="bar-item button">Reports</a>
+                    <a href="#" class="bar-item button">Analtics</a>
+                    <a href="#" class="bar-item button">Export</a><br>
+                    <a href="#" class="bar-item button">Graphs</a>
+                    <a href="#" class="bar-item button">New Collection</a><br>
+                    <a href="#" class="bar-item button">New Chat</a>
+                    <a href="#" class="bar-item button">New Post</a>
+                </div>  
+            </div>
+        </nav> 
+    </div>
+</body>
+</html>

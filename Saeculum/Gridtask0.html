@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" type="image/png" sizes="32x32" href="coder.jfif">
+
+    <title>Bootstrap Task</title>
+    <style>
+        body {
+            background-color: rgb(132, 209, 177);
+            
+        }
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        .bottomright,
+        .topright,
+        .left-inside {
+            border: 3px solid rgba(133, 209, 82, 0.7);
+            border-radius: 9px;
+        }
+
+        .img {    
+            height: 100px;
+            width: 110px;
+            border: 5px solid rgb(175, 185, 35);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid row justify-content-md-center">
+        <div class="col-3 left p-3">
+            <div class="left-inside p-4 shadow-lg bg-light">
+                <div>
+                    <img alt="Coder" src="./pexels-rovenimagescom-949587.jpg" class="img mx-auto d-block rounded-circle">
+                </div>
+                <div class="pt-3 text-center">
+                    <h4>Parv</h4>
+                </div>
+                <div class="text-center opacity-50">Front-end Learner</div>
+                <div class="text-center opacity-50">India Colony, Ahmedabad, India</div>
+                <div class="text-center pt-4 mb-4">
+                    <button type="Follow" class="btn btn-primary">Follow</button>
+                    <button class="btn btn-outline-primary" for="btnradio1">Message</button>
+                </div>
+                <hr><br>
+                <div class="pb-2 border-bottom text-decoration-none">
+                    <a href="#" target="_blank"><i class="fa fa-globe col-1 float-start fs-4" aria-hidden="true"></i></a>
+                    <div class="col">&nbsp;Website<small class="opacity-50 float-end">https://Parvkeda.com</small></div>
+                </div>
+                <div
+                    class="pb-2 pt-2 border-bottom">
+                    <a href="https://github.com/" target="_blank"><i class="fs-4 float-start fa fa-github col-1 text-dark" aria-hidden="true"></i></a>
+                    <div class="col">&nbsp;GitHub<small class="opacity-50 float-end" >Parvkeda</small> </div>
+                </div>
+                <div class="pb-2 pt-2 border-bottom">
+                    <a href="https://twitter.com/" target="_blank"><i class="float-start fa fa-twitter col-1 text-info fs-4" aria-hidden="true"></i></a>
+                    <div class="col">&nbsp; Twitter<small class="opacity-50 float-end">Parvkeda</small></div>
+                </div>
+                <div class="pb-2 pt-2 border-bottom">
+                    <a href="https://www.instagram.com/" target="_blank"><i class="float-start fa fa-instagram col-1 text-danger fs-4" aria-hidden="true"></i></a>
+                    <div class="col">&nbsp; Instagram <small class="opacity-50 float-end">Parv_keda_534</small></div>
+                </div>
+                <div class="pb-2 pt-2">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="float-start fa fa-facebook col-1 text-primary fs-4" aria-hidden="true"></i></a>
+                    <div class="col">&nbsp; Facebook <small class="opacity-50 float-end">Parv Keda</small></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col right p-3">
+            <div class="col topright mb-4 p-3 shadow-lg bg-light">
+                <div class="row m-3">
+                    <div class="col-3">Full Name</div>
+                    <div class="col-9"><input class="form-control" type="text" placeholder="Parv Keda"></div>
+                </div>
+                <div class="row m-3">
+                    <div class="col-3">Email</div>
+                    <div class="col-9"><input class="form-control" type="email" placeholder="parvkeda@523.com"></div>
+                </div>
+                <div class="row m-3">
+                    <div class="col-3">Phone</div>
+                    <div class="col-9"><input class="form-control" type="tel" placeholder="102 999-9999"></div>
+                </div>
+                <div class="row m-3">
+                    <div class="col-3">Mobile</div>
+                    <div class="col-9"><input class="form-control" type="tel" placeholder="+1 857-254-6528"></div>
+                </div>
+                <div class="row m-3">
+                    <div class="col-3">Address</div>
+                    <div class="col-9"><input class="form-control" type="text" placeholder="India Colony, Ahmedabad , India">
+                    </div>
+                </div>
+                <div class="row m-3">
+                    <div class="col-3"></div>
+                    <div class="col-9"><button type="submit" class="btn btn-primary">Save Changes</button></div>
+                </div>
+            </div>
+            <div class="col bottomright p-5 shadow-lg bg-light">
+                <div><h4>Project Status</h4></div><br>
+                <div>Web Design</div>
+                <div class="progress my-2" style="height: 10px;">
+                    <div class="progress-bar" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div>Website Markup</div>
+                <div class="progress my-2" style="height: 10px;">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div>Mobile Template</div>
+                <div class="progress my-2" style="height: 10px;">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div>One Page</div>
+                <div class="progress my-2" style="height: 10px;">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 83%" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div>Backend API</div>
+                <div class="progress my-2" style="height: 10px;">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 79%" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+</body>
+
+</html>

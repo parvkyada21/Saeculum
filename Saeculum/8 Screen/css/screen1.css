@@ -1,0 +1,142 @@
+
+
+
+@media screen and (min-width: 960px) {
+    .hide-nav-btn {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 960px) {
+    .menu {
+      display: flex!important;
+      flex-direction: column;
+      display: none;
+    }
+  
+    .items {
+      width: 100%;
+      display: none;
+      align-items: center;
+      margin: .7rem 0px;
+    }
+    .basic-nav-icon{
+        display: none;
+    }
+  
+  }
+  @media screen and (max-width: 1140px) {
+    .menu > li {
+        width: 120px!important
+      }
+  }
+  
+  nav {
+    padding:  6%!important;
+    width: 100%;
+  text-align: center;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+a{
+    text-decoration: none;
+    color: rgb(201, 66, 66);
+}
+.menu {
+  display: inline-block;
+  list-style: none;
+}
+
+.menu > li {
+  float: left;
+  color: rgb(201, 66, 66);
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  background: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.sub-menu {
+  list-style: none;
+  margin-left: -30px;  
+  transform: scale(0);
+  transform-origin: top center;
+  transition: all 300ms ease-in-out;
+}
+
+
+.sub-menu li {
+  font-size: 14px;
+  background: rgba(194, 191, 191, 0.678);
+  padding: 8px 0;
+  border-bottom: 2px solid rgba(102, 91, 91, 0.495);
+  transform: scale(0);
+  transform-origin: top center;
+  transition: all 300ms ease-in-out;
+}
+
+.sub-menu li:last-child {
+  border-bottom: 0;
+}
+
+
+.sub-menu li:hover {
+  background: rgb(255, 197, 197);
+}
+
+
+.menu > li:hover .sub-menu li{
+  transform: scale(1);
+}
+
+
+.items:hover ,.items a:hover ,.active{
+  font-weight: 700;
+  color: rgb(190, 53, 32);
+}
+
+
+
+
+.menu > li:hover .sub-menu {
+  transform: scale(1);
+}
+.bg-light-grey{
+  background: #F6F6F6;
+}
+
+.mx{
+  margin: .5rem auto!important
+}
+
+@media screen and (max-width: 576px) {
+  .header-pic-1{
+    width: 100%;
+    height: auto;
+  }
+  .order-antim{
+    order: 2;
+  }
+  .for-576-text-center{
+    text-align: center;
+  }
+  .control-font-size{
+    font-size: 2rem!important;
+  }
+  .site-1-vision-mission{
+    flex:0 0 auto;width:83.33333333%;
+    margin-left: auto;
+  }
+  .text-left-576{
+    margin-left: 20px;
+    text-align: left!important;
+  }
+  .experts-576{
+    width: 70%;
+  }
+  .ever-growing{
+    text-align: center;
+}
+}
+
